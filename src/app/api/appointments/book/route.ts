@@ -4,7 +4,7 @@ import { connect } from "@/config/dbConfig"; // Import the database connection f
 import { Appointment } from "@/models/appointmentModel"; // Import the Appointment model
 import { User } from "@/models/userModel"; // Import the User model
 import { Doctor } from "@/models/doctorModel";
-import { authOptions } from "@/app/api/auth/[...nextauth]/options"; // Import NextAuth options
+import { authOptions } from "@/app/api/auth/next-auth/options"; // Import NextAuth options
 import { getServerSession } from "next-auth/next"; // Import the getServerSession function from NextAuth
 
 // Connect to the database
