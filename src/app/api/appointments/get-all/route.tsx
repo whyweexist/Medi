@@ -3,7 +3,7 @@ import { connect } from "@/config/dbConfig";
 import { User } from "@/models/userModel";
 import { Appointment } from "@/models/appointmentModel";
 import { Doctor } from "@/models/doctorModel";
-import { authOptions } from "@/app/api/auth/[...nextauth]/options";
+import { authOptions } from "@/app/api/auth/next-auth/options";
 import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
 
