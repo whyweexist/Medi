@@ -51,8 +51,8 @@ This is a specialized doctor recommendation and appointment booking system built
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/mahafujul/MedNexa.git
-cd MedNexa
+git clone https://github.com/whyweexist/Medi.git
+cd Medi
 ```
 
 2. Install dependencies:
