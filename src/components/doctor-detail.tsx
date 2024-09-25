@@ -26,6 +26,7 @@ function DoctorDetail({ doctor }: any) {
       url: "",
     },
   ];
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 border-[1px] p-5 mt-5 rounded-lg">
@@ -44,7 +45,7 @@ function DoctorDetail({ doctor }: any) {
           <h2 className="font-bold text-2xl">{doctor.Name}</h2>
           <h2 className="flex gap-2 text-gray-500 text-md">
             <GraduationCap />
-            <span>{doctor.Year_of_Experience} years of Experince</span>
+            <span>{doctor.Year_of_Experience} years of Experience</span>
           </h2>
           <h2 className="text-md flex gap-2 text-gray-500">
             <MapPin />
@@ -55,25 +56,19 @@ function DoctorDetail({ doctor }: any) {
             <span>{`${doctor.feePerCunsultation} Consultation fee at clinic`}</span>
           </h2>
           <div className="flex gap-3">
-            <h2
-              className="text-[10px] bg-blue-100 p-1 rounded-full
-                            px-2 text-primary"
-            >
+            <h2 className="text-[10px] bg-blue-100 p-1 rounded-full px-2 text-primary">
               {doctor.specialization}
             </h2>
-            <h2
-              className="text-[10px] bg-blue-100 p-1 rounded-full
-                            px-2 text-primary"
-            >
+            <h2 className="text-[10px] bg-blue-100 p-1 rounded-full px-2 text-primary">
               {doctor.degrees}
             </h2>
           </div>
 
           <div className="flex gap-3">
-            {socialMediaList.map((item, index) => (
+            {socialMediaList.map((item) => (
               <Image
                 src={item.icon}
-                key={index}
+                key={item.id} // Use item.id as the key
                 width={30}
                 height={30}
                 alt={"social media icons"}
